@@ -5,6 +5,8 @@
 #ifndef WAAPOLICY_DEX_STRINGPIECE_H
 #define WAAPOLICY_DEX_STRINGPIECE_H
 
+#include <algorithm>
+
 #include <string.h>
 #include <string>
 #include <base/logging.h>

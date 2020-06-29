@@ -9,6 +9,7 @@
 #include <vector>
 #include <base/macros.h>
 
+#include <memory>
 
 namespace dex_ir {
     class TypeAddrPair {

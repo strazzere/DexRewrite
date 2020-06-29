@@ -3,6 +3,7 @@ A Framework for Rewriting DEX Files，Mainly for Android shell unpack,
 # How to build?
 1. Build in android studio with cmake
 2. Build in clion with cmake
+3. Build with cmake from command line (`mkdir build; cd build; cmake ..; make`)
 # Usage
 There are usage examples in library.cpp
 # eg.1

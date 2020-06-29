@@ -39,37 +39,37 @@ namespace dex_ir {
         for (uint32_t i = 0; i < dex_file.NumStringIds(); ++i) {
             collections.CreateStringId(dex_file, i);
         }
-        LOGI("[+] StringId:0x%x", collections.StringIds().size());
+        LOGI("[+] StringId:0x%lu", collections.StringIds().size());
         // TypeId table.
         collections.SetTypeIdsOffset(disk_header.type_ids_off_);
         for (uint32_t i = 0; i < dex_file.NumTypeIds(); ++i) {
             collections.CreateTypeId(dex_file, i);
         }
-        LOGI("[+] TypeId:0x%x", collections.TypeIds().size());
+        LOGI("[+] TypeId:0x%lu", collections.TypeIds().size());
         // ProtoId table.
         collections.SetProtoIdsOffset(disk_header.proto_ids_off_);
         for (uint32_t i = 0; i < dex_file.NumProtoIds(); ++i) {
             collections.CreateProtoId(dex_file, i);
         }
-        LOGI("[+] ProtoId:0x%x", collections.ProtoIds().size());
+        LOGI("[+] ProtoId:0x%lu", collections.ProtoIds().size());
         // FieldId table.
         collections.SetFieldIdsOffset(disk_header.field_ids_off_);
         for (uint32_t i = 0; i < dex_file.NumFieldIds(); ++i) {
             collections.CreateFieldId(dex_file, i);
         }
-        LOGI("[+] FieldId:0x%x", collections.FieldIds().size());
+        LOGI("[+] FieldId:0x%lu", collections.FieldIds().size());
         // MethodId table.
         collections.SetMethodIdsOffset(disk_header.method_ids_off_);
         for (uint32_t i = 0; i < dex_file.NumMethodIds(); ++i) {
             collections.CreateMethodId(dex_file, i);
         }
-        LOGI("[+] MethodId:0x%x", collections.MethodIds().size());
+        LOGI("[+] MethodId:0x%lu", collections.MethodIds().size());
         // ClassDef table.
         collections.SetClassDefsOffset(disk_header.class_defs_off_);
         for (uint32_t i = 0; i < dex_file.NumClassDefs(); ++i) {
             collections.CreateClassDef(dex_file, i);
         }
-        LOGI("[+] ClassDef:0x%x", collections.ClassDefs().size());
+        LOGI("[+] ClassDef:0x%lu", collections.ClassDefs().size());
         // MapItem.
         collections.SetMapListOffset(disk_header.map_off_);
         // CallSiteIds and MethodHandleItems.
@@ -86,14 +86,14 @@ namespace dex_ir {
                 dex_file.GetHeader().link_size_));
 
 
-        LOGI("[+] EncodedArrayItems:0x%x", collections.EncodedArrayItems().size());
-        LOGI("[+] AnnotationItems:0x%x", collections.AnnotationItems().size());
-        LOGI("[+] AnnotationSetItems:0x%x", collections.AnnotationSetItems().size());
-        LOGI("[+] AnnotationSetRefLists:0x%x", collections.AnnotationSetRefLists().size());
-        LOGI("[+] AnnotationsDirectoryItems:0x%x", collections.AnnotationsDirectoryItems().size());
-        LOGI("[+] DebugInfoItems:0x%x", collections.DebugInfoItems().size());
-        LOGI("[+] CodeItems:0x%x", collections.CodeItems().size());
-        LOGI("[+] ClassDatas:0x%x", collections.ClassDatas().size());
+        LOGI("[+] EncodedArrayItems:0x%lu", collections.EncodedArrayItems().size());
+        LOGI("[+] AnnotationItems:0x%lu", collections.AnnotationItems().size());
+        LOGI("[+] AnnotationSetItems:0x%lu", collections.AnnotationSetItems().size());
+        LOGI("[+] AnnotationSetRefLists:0x%lu", collections.AnnotationSetRefLists().size());
+        LOGI("[+] AnnotationsDirectoryItems:0x%lu", collections.AnnotationsDirectoryItems().size());
+        LOGI("[+] DebugInfoItems:0x%lu", collections.DebugInfoItems().size());
+        LOGI("[+] CodeItems:0x%lu", collections.CodeItems().size());
+        LOGI("[+] ClassDatas:0x%lu", collections.ClassDatas().size());
         LOGI("[+] Split dex over");
         return header;
     }

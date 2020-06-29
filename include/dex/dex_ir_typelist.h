@@ -7,6 +7,9 @@
 
 #include "dex_ir_item.h"
 #include "dex_ir_typeid.h"
+
+#include <memory>
+
 namespace dex_ir {
 
     class TypeList : public Item {

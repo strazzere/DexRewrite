@@ -7,6 +7,7 @@
 
 #include <string>
 #include <vector>
+#include <functional>
 
 enum MatchType {
     MATCH_EXACT,

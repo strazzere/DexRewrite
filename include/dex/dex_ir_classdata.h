@@ -13,6 +13,9 @@
 #include "dex_ir_fieid_item.h"
 #include "dex_ir_method_item.h"
 #include "dex_ir_item.h"
+
+#include <memory>
+
 namespace dex_ir {
     class ClassData : public Item {
     public:

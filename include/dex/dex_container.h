@@ -5,6 +5,8 @@
 #ifndef WAAPOLICY_DEX_CONTAINER_H
 #define WAAPOLICY_DEX_CONTAINER_H
 
+#include <stdint.h>
+
 #include <vector>
 
 namespace art {

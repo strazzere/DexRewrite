@@ -9,6 +9,7 @@
 #include <stdio.h>
 
 #include <string>
+#include <cstring>
 
 inline void StringAppendV(std::string *dst, const char *format, va_list ap) {
     // First try with a small fixed size buffer

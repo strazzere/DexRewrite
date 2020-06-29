@@ -12,6 +12,8 @@
 #include "dex_ir_item.h"
 #include <vector>
 
+#include <memory>
+
 namespace dex_ir {
     class EncodedValue {
     public:

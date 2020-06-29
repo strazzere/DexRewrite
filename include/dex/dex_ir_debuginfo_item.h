@@ -11,6 +11,9 @@
 
 #include "dex_ir_item.h"
 #include "dex_ir.h"
+
+#include <memory>
+
 namespace dex_ir {
     class DebugInfoItem : public Item {
     public:

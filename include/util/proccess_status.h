@@ -6,6 +6,8 @@
 #define WAAPOLICY_PORCCESS_STATUS_H
 
 #include <string>
+#include <cstring>
+#include <memory>
 
 typedef enum {
     kProcessStateUnknown,
@@ -39,5 +41,9 @@ public:
 
 
 };
+
+#ifndef PATH_MAX
+#define PATH_MAX (4096)
+#endif
 
 #endif //WAAPOLICY_PORCCESS_STATUS_H

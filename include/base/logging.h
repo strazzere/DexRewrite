@@ -1,6 +1,8 @@
 #ifndef _waa_BASE_LOGGING_H_
 #define _waa_BASE_LOGGING_H_
 
+#include <cstdarg>
+
 #include <string>
 #include <sstream>
 
@@ -330,6 +332,7 @@ inline int __android_log_print(int prio, const char *tag, const char *fmt, ...) 
 #define LOGD(...) ((void)__android_log_print(ANDROID_LOG_DEBUG, __FUNCTION__,__VA_ARGS__))
 
 
+#ifndef TEMP_FAILURE_RETRY
 /* Used to retry syscalls that can return EINTR. */
 #define TEMP_FAILURE_RETRY(exp) ({         \
     __typeof__(exp) _rc;                   \
@@ -339,6 +342,9 @@ inline int __android_log_print(int prio, const char *tag, const char *fmt, ...) 
     _rc; })
 
 #endif
+
+#endif
+
 
 
 #endif  // _waa_BASE_LOGGING_H_

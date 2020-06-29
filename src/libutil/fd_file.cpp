@@ -14,6 +14,8 @@
 #include <base/logging.h>
 #include <fcntl.h>
 
+#include <cstring>
+#include <memory>
 
 FdFile::FdFile()
         : guard_state_(GuardState::kClosed), fd_(-1), auto_close_(true), read_only_mode_(false) {

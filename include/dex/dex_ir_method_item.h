@@ -12,6 +12,10 @@
 
 #include "dex_ir.h"
 #include "dex_ir_item.h"
+
+#include <memory>
+#include <vector>
+
 namespace dex_ir {
 
     class MethodItem : public Item {

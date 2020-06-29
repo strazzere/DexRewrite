@@ -15,6 +15,8 @@
 #include <base/macros.h>
 #include <base/logging.h>
 
+#include <memory>
+
 namespace dex_ir {
     template<class T>
     class CollectionVector : public CollectionBase<T> {

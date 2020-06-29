@@ -8,6 +8,9 @@
 #include <pthread.h>
 #include <functional>
 
+#include <cassert>
+#include <cstring>
+
 std::vector<std::string> MemoryScan::string_split(std::string string, std::string delimiter, int max_tokens) {
     std::string::size_type pos = string.find(delimiter);
 

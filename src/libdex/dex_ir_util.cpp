@@ -12,6 +12,9 @@
 #include <dex/dex_ir_stringid.h>
 #include <dex/dex_ir_stringdata.h>
 
+#include <cstring>
+#include <algorithm>
+
 namespace dex_ir{
     std::string DexIRUtil::GetSignatureForProtoId(const ProtoId *proto) {
         if (proto == nullptr) {
